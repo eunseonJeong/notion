@@ -108,3 +108,51 @@ map은 중간정도만 이해함
     - 개념정리 스터디
     - 임건님과 아이들 스터디
     - 김동찬님과 코딩프로젴젴
+
+---
+
+## 문제 상황
+
+- Math.abs
+    1. 문제 상황
+    - Math.abs의 문법을 잘 적었다고 생각하는데 실행이 안되는 상황
+    
+    ```jsx
+    //숫자 배열 후 더하기는 함수찾기> 평균합 구하는 방법: (첫번째 숫자+끝 숫자)/2 + 원래 숫자 곗수//
+    //작성코드
+    function adder(a, b){
+    var result = 0
+    
+    return (a+b)*(Math.abs(b-a)+1)/2;
+    
+    }
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------
+    //코테에는 지정된 함수값 function을 adder대신 넣어줘야 실행된다!!!
+    //해결완료
+    function solution(a, b){
+        var result = 0
+        
+        return (a+b)*(Math.abs(b-a)+1)/2;
+    
+    }
+    
+    ```
+    
+    > 2. 내가 생각하는 핵심 에러 메세지
+    > 
+    - type error
+    
+    > 3. 나의 시도
+    > 
+    - type??/ 뭔가 선언이 되어있지 않았나? 대체 뭘까?
+    - 값이 잘못된걸까? 괄호가 잘못되어있나? 체크함
+    
+    > 4. 참고한 레퍼런스
+    > 
+    - [https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/abs](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/abs)
+    - [https://m.blog.naver.com/PostView.nhn?blogId=saomath&logNo=222046532714&proxyReferer=https:%2F%2Fwww.google.com%2F](https://m.blog.naver.com/PostView.nhn?blogId=saomath&logNo=222046532714&proxyReferer=https:%2F%2Fwww.google.com%2F)
+    
+    > 5. 이후 상황
+    > 
+    - solution으로 바꿔주니 바로 실행되었고, 다른 곳에서 사용하면 solition값을 변경해줘도 되지만 코테에선 지정된 값만 사용해줘야 하기 때문에 오류가 났었던 것이다 !!!
+    - 사실 이 부분은 기록을 할까말까 고민했는데 너무 어이없는 실수라 그러지말자고 기록해둔다.. 오타 함수명 다시 한번 재확인 하는 습관을 가지자!!!!

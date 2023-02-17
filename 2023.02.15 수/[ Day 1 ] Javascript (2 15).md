@@ -28,10 +28,10 @@
 ⏱️ **Study Time ::  16H 52M**
 
 - [ ]  09:00 - 10:30
-- [ ]  10:30 - 12:30 코딩테스트 1
+- [ ]  10:30 - 12:30 코딩 테스트 1
 - [ ]  12:30 -13:00 점심시간
 - [ ]  13:00 - 13:35 낮잠
-- [ ]  14:00~19:00 코딩테스트2
+- [ ]  14:00~19:00 코딩 테스트2
 - [ ]  19:00 - 19:30 저녁시간
 - [ ]  10:30 - 21:00 이윤 매니저님 순회
 - [ ]  21:00 - 22:30 전체적인 TIL
@@ -84,7 +84,7 @@
 
 ## 🗂️ **Study-groud**
 
-[https://www.notion.so/JavaScript-3-b1a19f5cea2d42f88662e7ea64afadac?pvs=4](https://www.notion.so/JavaScript-3-b1a19f5cea2d42f88662e7ea64afadac)
+[https://www.notion.so/JavaScript-3-b1a19f5cea2d42f88662e7ea64afadac?pvs=4](https://www.notion.so/3-map-const-var-let-b1a19f5cea2d42f88662e7ea64afadac)
 
 ---
 
@@ -104,3 +104,63 @@
 실행 컨텍스트
 전역 스코프
 함수 스코프
+
+---
+
+## 문제상항
+
+- 삼항연산자
+    
+    > 1. 문제 상황
+    > 
+    - 삼항연산자로 코드를 간결하게 쓰고 싶은데 안되는 상황
+    
+    ```jsx
+    //작성코드
+    function solution(num) {        //solution을 불러 오려면 마지막에 soluttion(숫자);
+    
+        var answer = '';
+    
+        if(num % 2 == 0){          //짝수
+            return "Even";
+        } else {
+            return "Odd";
+        }
+    }
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------
+    //위에 if문과 같은 삼항연산자 사용 식 (실행x) 
+    //> 나는 'chageName'을 통해서 가져오려고 했는데 그 생각이 잘못되었던 것 같다. 
+    //console.log와 return을 아직 헷갈리는 듯
+    
+    function solution(num) {   
+        var answer = '';
+    		
+    let chageName = num % 2 == 0 ? "Even" : "Odd";
+    console.log(chageName);
+    }
+    
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------
+    //**해결완료**
+    function solution(num) {
+      return num % 2 === 0 ? "Even" : "Odd";
+    }
+    ```
+    
+    > 2. 내가 생각하는 핵심 에러 메세지
+    > 
+    - Error: chageName is not defined
+    - undefined가 나온다.
+    
+    > 3. 나의 시도
+    > 
+    - chageName이(가) 정의되지 않아서 changName()로 정의해주기.
+    - 애초에 그런 함수명이 필요가 없었다.. 그냥 return으로 뽑고 싶은 값을 정해주고
+    
+    > 4. 참고한 레퍼런스
+    > 
+    - x
+    
+    > 5. 이후 상황
+    > 
+    - 해결완료
+    - **궁금증** return은 값을 표현해주는 것이고, console은 그냥 확인용이다?!
