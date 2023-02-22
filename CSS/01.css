@@ -1,0 +1,46 @@
+html {
+    background-color: orange;
+    height: 100%;
+    width: 100%;
+  
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .whole{
+    background-color: yellow;
+    height: 300px;
+    width: 300px;
+  
+    margin-left: 150px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  
+    border: 2px solid black;
+  }
+  .upbox{
+    background-color: green;
+    height: 50px;
+    width: 50px;
+    
+    border: 2px solid white;
+  }
+  .middlebox{
+    background-color: green;
+    height: 50px;
+    width: 200px;
+  
+  
+    border: 2px dashed white
+  }
+  .downbox{
+    background-color: green;
+    height: 50px;
+    width: 50px;
+  
+    border: 2px solid white;
+  }
+  
